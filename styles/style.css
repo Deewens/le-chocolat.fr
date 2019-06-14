@@ -1,0 +1,607 @@
+/* -----Propriétés générals----- */
+
+.red {
+    color: red;
+}
+
+h1.page_title {
+    text-align: center;
+    border: 1px solid black;
+    background-color: goldenrod;
+    box-shadow: 0px 3px 5px black;
+}
+
+/* Main */
+
+body {
+
+    margin: 0;
+    font-family: arial;
+    font-size: 18px;
+}
+
+/* -----Header----- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #fc9a3f, #e67e22);
+    box-shadow: 0px 10px 40px black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+/* -----Logo+title----- */
+
+.title {
+    display: flex;
+    background-color: bisque;
+    width: 225px;
+    justify-content: center;
+    margin: auto;
+}
+
+.title img {
+    height: 50px;
+}
+
+/* -----Navbar----- */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.menu a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a.active {
+    background-color: bisque;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.menu > li {
+    border-right: 1px solid #bbb;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.menu > li:last-child {
+    border-right: none;
+}
+
+.menu a:hover {
+    background-color: bisque;
+    color: #e67e22;
+}
+
+.sous-menu-parent {
+    position: relative;
+}
+
+.sous-menu-parent:hover > .sous-menu {
+    display: flex;
+}
+
+.sous-menu {
+    display: none;
+    flex-flow: column wrap;
+    position: absolute;
+    background: #e67e22;
+    width: 100%;
+    z-index: 2;
+}
+
+.sous-menu a {
+    text-align: center;
+    color: white;
+}
+
+/* -----Body----- */
+
+div.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-image: url('../images/background2.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+section.content_main {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(150, 150, 150, 1));
+    max-width: 1300px;
+    min-width: 60%;
+    min-height: 100vh;
+    padding: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 40px black;
+}
+
+aside {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(150, 150, 150, 1));
+    width: 300px;
+    height: 50%;
+    margin-left: 40px;
+    padding: 10px;
+}
+
+/* -----Accueil----- */
+
+section.accueil h2,
+section.chiffres h2,
+section.physique h2,
+section.chocolat h2,
+section.autre h2 {
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+section p {
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.article_accueil {
+    margin-top: 50px;
+}
+
+/* -----Recettes----- */
+
+
+div.line_recettes {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100%;
+}
+
+
+article.recettes img {
+    width: 100%;
+    height: 300px;
+}
+
+article.recettes {
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #F97F51;
+    text-align: center;
+    word-break: keep-all;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 0 auto;
+}
+
+article.recettes h1 {
+    background-color: #eb4d4b;
+    box-shadow: 5px 5px 10px black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+article.recettes p {
+    word-break: keep-all;
+    text-align: justify;
+    flex: 1 1 auto;
+}
+
+article.recettes p.suite {
+    text-align: right;
+    flex: 0 0 auto;
+}
+
+article.recettes p.suite a {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+article.recettes p.suite a:hover {
+    color: #e67e22;
+    background-color: white;
+}
+
+article.recettes p.suite a {
+    transition: background-color 2s;
+}
+
+/* -----Recettes : articles-----*/
+
+section.recette img {
+    display: block;
+    margin: 0 auto;
+    height: 60%;
+    width: 100%;
+}
+
+section.recette h1 {
+    text-align: center;
+}
+
+section.recette li {
+    line-height: 30px;
+}
+
+/* -----Fabrication----- */
+
+div.line_fabrication_step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article.fabrication_step {
+    width: 90%;
+    background-color: #F97F51;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    border: 1px dashed black;
+    box-sizing: border-box;
+    line-height: 1.3em;
+}
+
+article.fabrication_step h2 {
+    background-color: darkorange;
+    border: 1px double darkblue;
+    box-sizing: border-box;
+    width: 60%;
+    font-size: 1.2em;
+    margin: 10px auto;
+    box-shadow: 0 2px 6px blue;
+}
+
+article.fabrication_step img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+/* -----Footer----- */
+
+footer.main_footer {
+    background: linear-gradient(to right, #95afc0, #303952);
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+div.content_footer {
+    display: flex;
+    height: 100%;
+}
+
+section.section_footer {
+    width: 50%;
+    border-right: 1px solid black;
+    border-bottom: 1px dashed black;
+    box-sizing: border-box;
+}
+
+section.section_footer a:hover {
+    color: #e67e22;
+}
+
+section.section_footer a {
+    transition: color 0.5s;
+}
+
+section.section_footer:nth-of-type(3) {
+    border-right: none;
+}
+
+footer.footer_footer {
+    text-align: center;
+}
+
+/* CHIFFRES */
+
+
+.firstlist {
+    margin-left: 8%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 55%;
+}
+
+.cellulepleine {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+}
+
+.pays {
+    border-right: 1px solid black;
+}
+
+table thead {
+    border: 1px solid black;
+}
+
+tfoot td {
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.num {
+    border-left: 1px solid black;
+    width: 40px;
+}
+
+.categ {
+    height: 50px;
+}
+
+.complementallemagne {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 30px solid #B5B5B5;
+}
+
+.complementbelgique {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 33px solid #B4B4B4;
+}
+
+.complementsuisse {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 35px solid #B1B1B1;
+}
+
+.complementfrance {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 30px solid #B2B2B2;
+}
+
+.complementeurope {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 33px solid #B3B3B3;
+}
+
+.complementchine {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 50px solid #B1B1B1;
+}
+
+.imgcarte {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+span {
+    color: red;
+}
+
+/* SLIDER */
+
+.trigger {
+    display: none;
+}
+
+.slider,
+.slider_wrapper {
+    position: relative;
+    height: 250px;
+}
+
+.slide {
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    border-radius: 10px;
+    border: 2px inset white;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 10px black;
+}
+
+.slide_img {
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.slide_figure {
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.slide_caption {
+    position: absolute;
+    bottom: 30%;
+    width: calc(100% - 1rem);
+    color: white;
+    text-align: center;
+    left: 50%;
+}
+
+.trigger:checked + .slide {
+    z-index: 4;
+    opacity: 1;
+}
+
+.slider_nav {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.slider_nav_item {
+    display: inline-block;
+}
+
+.slider_nav_label {
+    font-size: 13px;
+    background-color: #333;
+    display: block;
+    height: 2em;
+    line-height: 2em;
+    width: 2em;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider_nav_label:hover,
+.slider_nav_label:active,
+.slider_nav_label:focus {
+    background-color: gray;
+    color: black;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .slider,
+    .slider_wrapper {
+        height: 480px;
+    }
+
+    .slide_caption {
+        width: 65%;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .slider,
+    .slider_wrapper {
+        height: 360px;
+    }
+
+    .slide_caption {
+        width: 75%;
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .slide_img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.trigger:checked + .slide {
+    z-index: 4;
+    opacity: 1;
+}
+
+.slider p {
+    color: black;
+}
+
+
+/* -----Media Queries----- */
+
+@media (max-width: 1012px) {
+    .main {
+        transform: translate(0px, 50px);
+    }
+
+    footer.main_footer {
+        transform: translate(0px, 50px);
+    }
+
+    article.recettes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1008px) {
+    .menu > li {
+        border: none;
+    }
+}
+
+/* PHYSIQUE */
+
+th {
+    border: 1px solid black;
+}
+
+td.tablephy {
+    border: 1px solid black;
+}
+
+/* Chocolat */
+
+section.chocolat img,
+section.lait img,
+section.noir img,
+section.blanc img,
+section.autre img {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px inset silver;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 10px black;
+}
+
+
+/* Bienfaits */
+
+section.bienfait img {
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

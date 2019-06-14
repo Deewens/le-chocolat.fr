@@ -1,0 +1,422 @@
+/* -----Propriétés générals----- */
+
+.red {
+    color: red;
+}
+
+h1.page_title {
+    text-align: center;
+    border: 1px solid black;
+    background-color: goldenrod;
+    box-shadow: 0px 3px 5px black;
+}
+
+/* Main */
+
+body {
+    margin: 0;
+    font-family: arial;
+    font-size: 16px;
+}
+
+/* -----Header----- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to right, #fc9a3f, #e67e22);
+}
+
+/* -----Logo+title----- */
+
+.title {
+    display: flex;
+    background-color: bisque;
+    width: 225px;
+    justify-content: center;
+    margin: auto;
+}
+
+.title img {
+    height: 50px;
+}
+
+
+/* -----Navbar----- */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.menu a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a.active {
+    background-color: bisque;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: bisque;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.sous-menu-parent {
+    position: relative;
+}
+
+.sous-menu-parent:hover > .sous-menu {
+    display: flex;
+    z-index: 2;
+}
+
+.sous-menu {
+    display: none;
+    flex-flow: column wrap;
+    position: absolute;
+    background: #e67e22;
+    width: 100%;
+}
+
+.sous-menu a {
+    text-align: center;
+    color: white;
+}
+
+/* -----Body----- */
+
+div.main {
+    display: flex;
+    justify-content: justify;
+    background-image: url('../images/background2.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+section.content_main {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(150, 150, 150, 1));
+    width: 85%;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 6px 6px 40px black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+aside {
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(150, 150, 150, 1));
+    width: 300px;
+    height: 50%;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+/* -----Accueil----- */
+
+section.accueil h2,
+section.chiffres h2,
+section.physique h2,
+section.chocolat h2,
+section.autre h2 {
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+section.accueil p {
+    text-align: justify;
+}
+
+/* -----Recettes----- */
+
+section.content_recette {
+    margin: inherit;
+}
+
+
+div.line_recettes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article.recettes img {
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+}
+
+article.recettes {
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: #F97F51;
+    text-align: center;
+    word-break: keep-all;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+article.recettes h1 {
+    background-color: #eb4d4b;
+    box-shadow: 5px 5px 10px black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+article.recettes p {
+    word-break: keep-all;
+    text-align: justify;
+    flex: 1 1 auto;
+}
+
+article.recettes p.suite {
+    text-align: right;
+    flex: 0 0 auto;
+}
+
+article.recettes p.suite a {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+article.recettes p.suite a:hover {
+    color: #e67e22;
+    background-color: white;
+}
+
+article.recettes p.suite a {
+    transition: background-color 2s;
+}
+
+/* -----Recettes : articles-----*/
+
+section.recette img {
+    display: block;
+    margin: 0 auto;
+    height: 60%;
+    width: 100%;
+}
+
+section.recette h1 {
+    text-align: center;
+}
+
+section.recette li {
+    line-height: 30px;
+}
+
+/* -----Fabrication----- */
+
+div.line_fabrication_step {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article.fabrication_step {
+    width: 90%;
+    background-color: #F97F51;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    border: 1px dashed black;
+    line-height: 1.3em;
+}
+
+article.fabrication_step h2 {
+    background-color: darkorange;
+    border: 1px double darkblue;
+    width: 60%;
+    font-size: 1.2em;
+    margin: 10px auto;
+    box-shadow: 0 2px 6px blue;
+}
+
+article.fabrication_step img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+/* -----Footer----- */
+
+footer.main_footer {
+    background: linear-gradient(to right, #95afc0, #303952);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+div.content_footer {
+    display: flex;
+    height: 100%;
+}
+
+section.section_footer {
+    width: 50%;
+    border-right: 1px solid black;
+    border-bottom: 1px dashed black;
+}
+
+section.section_footer:nth-of-type(3) {
+    border-right: none;
+}
+
+footer.footer_footer {
+    text-align: center;
+}
+
+/* CHIFFRES */
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 55%;
+}
+
+.cellulepleine {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+}
+
+.pays {
+    border-right: 1px solid black;
+}
+
+table thead {
+    border: 1px solid black;
+}
+
+tfoot td {
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.num {
+    border-left: 1px solid black;
+    width: 1px;
+}
+
+.categ {
+    height: 30px;
+}
+
+.complementallemagne {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 33px solid #B5B5B5;
+}
+
+.complementbelgique {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 33px solid #B4B4B4;
+}
+
+.complementsuisse {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 35px solid #B1B1B1;
+}
+
+.complementfrance {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 30px solid #B2B2B2;
+}
+
+.complementeurope {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 33px solid #B3B3B3;
+}
+
+.complementchine {
+    background-color: #EA480D;
+    border: 0px solid #EA480D;
+    border-right: 50px solid #B1B1B1;
+}
+
+.imgcarte {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+span {
+    color: red;
+}
+
+/* Slider */
+
+.slider,
+.slider_wrapper {
+    display: none;
+}
+
+
+/* PHYSIQUE */
+
+th {
+    border: 1px solid black;
+}
+
+td.tablephy {
+    border: 1px solid black;
+}
+
+/* Chocolat */
+
+section.chocolat img,
+section.blanc img,
+section.noir img,
+section.lait img,
+section.autre img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* Bienfaits */
+
+section.bienfait img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
